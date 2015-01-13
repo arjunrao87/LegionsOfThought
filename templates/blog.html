@@ -12,7 +12,7 @@
 	      {{ object.created }} |
 	      Tagged under {{  object.tags.all|join:", " }}
 	    </p>
-	    {{ object.body|markdown }}
+	    {{object.body|truncatewords:10|markdown}}
 	  </div>
 	{% endfor %}
 	</div>

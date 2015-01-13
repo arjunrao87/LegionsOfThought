@@ -40,6 +40,8 @@ INSTALLED_APPS = (
 
     'blog',
     'django_markdown',
+    'gammaworks',
+    'gallery',
 )
 
 MIDDLEWARE_CLASSES = (
