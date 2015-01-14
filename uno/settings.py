@@ -118,5 +118,6 @@ GOOGLE_ANALYTICS_PROPERTY_ID = 'UA-58541176-1'
 GOOGLE_ANALYTICS_DOMAIN = 'www.legionsofthought.com'
 
 TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
     'uno.context_processors.google_analytics',
 )
