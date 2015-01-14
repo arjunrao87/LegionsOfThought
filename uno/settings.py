@@ -115,7 +115,7 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 #Google analytics
 GOOGLE_ANALYTICS_PROPERTY_ID = 'UA-58541176-1'
-GOOGLE_ANALYTICS_DOMAIN = 'www.legionsofthought.com'
+GOOGLE_ANALYTICS_DOMAIN = 'legionsofthought.com'
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
