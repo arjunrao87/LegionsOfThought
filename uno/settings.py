@@ -53,7 +53,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'lockdown.middleware.LockdownMiddleware',
+#    'lockdown.middleware.LockdownMiddleware',
 )
 
 ROOT_URLCONF = 'uno.urls'
@@ -125,4 +125,4 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 #Django Lockdown
-LOCKDOWN_PASSWORDS = ('101legion101')
+#LOCKDOWN_PASSWORDS = ('101legion101')
