@@ -1,6 +1,6 @@
 from django.db import models
 from django.core.urlresolvers import reverse
-
+from django.forms import ModelForm
 
 class Tag(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
@@ -35,3 +35,13 @@ class Entry(models.Model):
         verbose_name = "Blog Entry"
         verbose_name_plural = "Blog Entries"
         ordering = ["-created"]
+
+
+class ContactUs( models.Model ):
+    name = models.CharField( max_length=100 )
+    email = models.CharField( max_length=100 )
+    phone = models.CharField( max_length=100 )
+    message = models.CharField( max_length=250 )
+    
+    def __str__(self):              # __unicode__ on Python 2
+        return self.name

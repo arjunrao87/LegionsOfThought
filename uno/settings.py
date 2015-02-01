@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'django_markdown',
     'gammaworks',
     'gallery',
+    'lockdown',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -52,6 +53,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'lockdown.middleware.LockdownMiddleware',
 )
 
 ROOT_URLCONF = 'uno.urls'
@@ -96,8 +98,8 @@ DISQUS_API_KEY ='8YszMzg4SnmBWr2QiSbZIfhkH45o9UH7tSctUTnSPt2fyZpvmpED3HRDtMFGaMj
 ##################HEROKU CONFIGURATION#################
 
 # Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+#import dj_database_url
+#DATABASES['default'] =  dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -121,3 +123,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'uno.context_processors.google_analytics',
 )
+
+#Django Lockdown
+LOCKDOWN_PASSWORDS = ('101legion101')

@@ -10,4 +10,6 @@ urlpatterns = patterns(
     url(r'^', include('blog.urls')),
     url(r'^', include('gammaworks.urls')),
     url(r'^', include('gallery.urls')),
+
+
 )

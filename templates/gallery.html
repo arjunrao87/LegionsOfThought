@@ -16,6 +16,11 @@
                     <div class="item">
                         <img class="img-responsive img-full" src="{% static "img/pic8.jpg" %}" alt="">
                     </div>
+                    {% for i in "xxxxxxxxxxxxxxxxxxxxxxx" %}
+                        <div class="item">
+                            <img class="img-responsive img-full" src="{% static "img/FullSizeRender {{ forloop.counter0 }}.jpg" %}" alt="">
+                        </div>
+                    {% endfor %}
                     <br>
                 </div>
             </div>
