@@ -42,7 +42,7 @@ INSTALLED_APPS = (
     'django_markdown',
     'gammaworks',
     'gallery',
-    'lockdown',
+#    'lockdown',
 )
 
 MIDDLEWARE_CLASSES = (
