@@ -7,7 +7,7 @@
                <div class="container">
       <ul class="grid effect" id="grid">
                     <li>
-                        <img class="img-responsive img-full" src="{% static "img/pic1.jpg" %}" alt="">
+                    <a href="{% static "img/pic1.jpg" %}" data-lightbox="image-1" data-title="On the way to Tahoe"><img class="img-responsive img-full" src="{% static "img/pic1.jpg" %}" alt=""></a>
                     </li>
                     <br>
                     <li>
@@ -171,6 +171,9 @@
     <script src="{% static "js/imagesloaded.js" %}"></script>
     <script src="{% static "js/classie.js"%}"></script>
     <script src="{% static "js/AnimOnScroll.js"%}"></script>
+    <script src="{% static "js/jquery-1.11.0.min.js"%}"></script>
+    <script src="{% static "js/lightbox.min.js"%}"></script>
+    <link   href="{% static  "css/lightbox.css"%}" rel="stylesheet" />
     <script>
       new AnimOnScroll( document.getElementById( 'grid' ), {
         minDuration : 0.4,
