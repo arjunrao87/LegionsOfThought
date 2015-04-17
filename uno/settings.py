@@ -126,9 +126,15 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 #AWS S3 storage
-AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
-AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
-AWS_STORAGE_BUCKET_NAME = os.environ['S3_BUCKET_NAME']
+# AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
+# AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
+# AWS_STORAGE_BUCKET_NAME = os.environ['S3_BUCKET_NAME']
+# MEDIA_URL = 'http://s3.amazonaws.com/'+AWS_STORAGE_BUCKET_NAME+'/pics/' 
+# DEFAULT_FILE_STORAGE = "storages.backends.s3boto.S3BotoStorage"
+
+AWS_ACCESS_KEY_ID = 'AKIAJF4E5OKIE2V6CDVQ'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'legionsofthought'
 MEDIA_URL = 'http://s3.amazonaws.com/'+AWS_STORAGE_BUCKET_NAME+'/pics/' 
 DEFAULT_FILE_STORAGE = "storages.backends.s3boto.S3BotoStorage"
 
