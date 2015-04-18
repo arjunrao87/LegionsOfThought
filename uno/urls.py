@@ -7,9 +7,7 @@ urlpatterns = patterns(
     url(r'^markdown/', include("django_markdown.urls")),
     
     # Custom apps
-    url(r'^', include('blog.urls')),
     url(r'^', include('gammaworks.urls')),
     url(r'^', include('gallery.urls')),
-
-
+    url(r'^', include('main.urls')),
 )
